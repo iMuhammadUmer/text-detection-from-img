@@ -9,12 +9,24 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Text detection from Image</title>
   </head>
   <body>
     <h1>Convert image into text</h1>
     <input type="file" class="btn btn-primary" value="Upload Image" />
-    <input type="submit" class="btn btn-success" value="Convert" />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">uploaded Image</div>
+        <div class="col-sm">
+          <input type="submit" class="btn btn-success" value="Convert" />
+        </div>
+        <div class="col-sm">
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
